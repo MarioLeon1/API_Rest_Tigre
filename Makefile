@@ -13,3 +13,9 @@ coverage:
 
 trivy:
 	trivy fs .
+
+encrypt-secrets:
+	sops --encrypt --pgp 3D16CEE4A27381B4 secrets.yaml > secrets.enc.yaml
+
+decrypt-secrets:
+	sops --decrypt secrets.enc.yaml > secrets.yaml

@@ -1,8 +1,17 @@
+import os
 from flask import Flask, jsonify, request, redirect, url_for, render_template_string
+from dotenv import load_dotenv
 from models import Animal
 from database import init_db, db_session
 
+# Cargar variables de entorno desde el archivo .env
+load_dotenv()
+
 app = Flask(__name__)
+
+# Configuraciones de la aplicación usando variables de entorno
+app.config['ENV'] = os.getenv('FLASK_ENV', 'development')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'mysecretkey')
 
 # Inicializar la base de datos y crear un tigre si no existe
 def initialize_default_data():
