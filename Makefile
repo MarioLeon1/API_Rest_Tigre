@@ -1,21 +1,24 @@
+# Ejecutar la aplicación
 run:
-	python app.py
+	poetry run python app.py
 
+# Ejecutar pruebas
 test:
-	python -m unittest discover -s tests
+	poetry run pytest
 
+# Linter con flake8
 lint:
-	flake8 .
+	poetry run flake8 .
 
+# Medir la cobertura
 coverage:
-	coverage run -m unittest discover -s tests
-	coverage report -m
+	poetry run coverage run -m pytest
+	poetry run coverage report -m
 
-trivy:
-	trivy fs .
-
+# Cifrar secretos
 encrypt-secrets:
-	sops --encrypt --pgp 3D16CEE4A27381B4 secrets.yaml > secrets.enc.yaml
+	poetry run sops --encrypt --pgp 3D16CEE4A27381B4 secrets.yaml > secrets.enc.yaml
 
+# Descifrar secretos
 decrypt-secrets:
-	sops --decrypt secrets.enc.yaml > secrets.yaml
+	poetry run sops --decrypt secrets.enc.yaml > secrets.yaml

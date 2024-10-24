@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "api-rest-tigre"
+version = "0.1.0"
+description = "Entorno virtual para la API Rest del Tigre"
+authors = ["Mario Leon"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.3"
+python-dotenv = "^1.0.1"
+SQLAlchemy = "^2.0.36"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+flake8 = "^7.1.1"
+coverage = "^7.6.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
