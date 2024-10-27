@@ -1,0 +1,194 @@
+    1  git --version
+    2  make --version
+    3  asdf  --version
+    4  ls
+    5  git --version
+    6  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+    7  ls
+    8  asdf --version
+    9  asdf
+   10  ls
+   11  sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline-dev zlib1g-dev libncurses-dev libffi-dev libgdbm-dev
+   12  apt-get update
+   13  ls
+   14  git clone https://github.com/asdf-vm/asdf.git
+   15  ls
+   16  asdff
+   17  asdf
+   18  asdf --version
+   19  cd asdf
+   20  ls
+   21  cd..
+   22  cd
+   23  ./asdf.sh
+   24  cd asdf
+   25  ./asdf.sh
+   26  sudo bash asdf.sh
+   27  cd
+   28  clear
+   29  ls
+   30  asdf
+   31  asdf --version
+   32  cd asdf
+   33  pwd
+   34  ls -la
+   35  cd ..
+   36  ls -la
+   37  cd .asdf/
+   38  ls
+   39  asdf
+   40  . $HOME/.asdf/asdf.sh
+   41  asdf
+   42  asdf --version
+   43  asdf
+   44  ls
+   45  asdf
+   46  . $HOME/.asdf/asdf.sh
+   47  asdf
+   48  asdf --version
+   49  asdf plugin add ruby
+   50  asdf plugin add nodejs
+   51  asdf plugin add yarn
+   52  asdf install ruby latest
+   53  asdf install nodejs latest
+   54  asdf shell nodejs 16.8.0
+   55  nodejs --version
+   56  node --version
+   57  asdf shell nodejs 22.8.0
+   58  conda env list
+   59  ls -a
+   60  ls -la
+   61  asdf list nodejs
+   62  asdf plugin add terraform
+   63  asdf install terraform 1.5.5
+   64  asdf global terraform 1.5.5
+   65  asdf install terraform 1.5.5
+   66  ls
+   67  terraform --version
+   68  asdf local terraform 1.5.5
+   69  sudo asdf install terraform 1.5.5
+   70  asdf install terraform
+   71  asdf --version
+   72  asdf install terraform 1.5.5
+   73  sudo apt install unzip
+   74  asdf install terraform 1.5.5
+   75  terraform --version
+   76  asdf global terraform 1.5.5
+   77  terraform --version
+   78  mkdir ~/terraform
+   79  cd ~/terraform
+   80  git init
+   81  echo 'provider "aws" {}' > main.tf
+   82  sudo apt update
+   83  sudo apt upgrade
+   84  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   85  bash Miniconda3-latest-Linux-x86_64.sh
+   86  source ~/.bashrc
+   87  conda --version
+   88  clear
+   89  sudo apt install git
+   90  git --version
+   91  sudo apt install make
+   92  make --version
+   93  sudo apt install curl git
+   94  asdf --version
+   95  sudo apt install asdf
+   96  sudo apt install make
+   97  make --version
+   98  ls
+   99  cd /mnt/c/Users/mario/Downloads/API_Rest_Tigre
+  100  ls
+  101  make run
+  102  make test
+  103  make app
+  104  make lint
+  105  pip install flake8
+  106  make lint
+  107  python3 --version
+  108  pip3 --version
+  109  pip3 install -r requirements.txt
+  110  make run
+  111  make test
+  112  python -m unittest discover -s tests
+  113  make coverage
+  114  pip install coverage
+  115  make coverage
+  116  brew install aquasecurity/trivy/trivy
+  117  sudo apt install brew
+  118  sudo apt install wget apt-transport-https gnupg lsb-release
+  119  wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+  120  echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+  121  sudo apt update
+  122  sudo apt install trivy
+  123  trivy --version
+  124  make trivy
+  125  pip install python-dotenv
+  126  pip freeze > requirements.txt
+  127  sudo apt install sops
+  128  sudo apt update
+  129  sudo apt install wget apt-transport-https gnupg lsb-release
+  130  wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+  131  echo "deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/sops.list
+  132  sudo apt update
+  133  sudo apt install sops
+  134  wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops-v3.7.3.linux
+  135  git clone https://github.com/getsops/sops.git
+  136  sudo apt install golang-go
+  137  cd sops
+  138  make install
+  139  sudo apt remove golang-go
+  140  sudo apt autoremove
+  141  wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+  142  sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+  143  echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+  144  source ~/.bashrc
+  145  go version
+  146  go --version
+  147  cd sops
+  148  make install
+  149  nano ~/.bashrc
+  150  go version
+  151  source ~/.bashrc
+  152  wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops-v3.7.3.linux
+  153  sudo mv sops-v3.7.3.linux /usr/local/bin/sops
+  154  cd ~
+  155  wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops-v3.7.3.linux
+  156  sudo mv sops-v3.7.3.linux /usr/local/bin/sops
+  157  sudo chmod +x /usr/local/bin/sops
+  158  sops --version
+  159  cd /mnt/c/Users/mario/Downloads/API_Rest_Tigre
+  160  gpg --import sops_functional_tests_key.asc
+  161  sops --encrypt --pgp 3D16CEE4A27381B4 secrets.yaml > secrets.enc.yaml
+  162  sops --decrypt secrets.enc.yaml > secrets.yaml
+  163  gpg --list-keys
+  164  make decrypt-secrets
+  165  make encrypt-secrets
+  166  make decrypt-secrets
+  167  sops --decrypt secrets.enc.yaml > secrets.yaml
+  168  make encrypt-secrets
+  169  cd /mnt/c/Users/mario/Downloads/API_Rest_Tigre
+  170  make encrypt-secrets
+  171  npx create-expo-app@latest
+  172  cd /mnt/c/Users/mario/Downloads/API_Rest_Tigre
+  173  npm install -g projen
+  174  sudo apt install npm
+  175  npm install -g projen
+  176  sudo npm install -g projen
+  177  projen --version
+  178  projen
+  179  sudo apt remove nodejs
+  180  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+  181  source ~/.bashrc
+  182  nvm --version
+  183  nvm install 18
+  184  nvm use 18
+  185  node --version
+  186  npm install -g projen
+  187  projen --version
+  188  projen new python
+  189  git config --global user.name "MarioLeon1"
+  190  git config --global user.email "mariosernaleon@gmail.com"
+  191  git config --global --list
+  192  projen new python
+  193  history
+  194  history > logsWSL.txt
